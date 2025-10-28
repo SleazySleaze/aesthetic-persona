@@ -4,7 +4,9 @@
    "title":"Aesthetic Persona",
    "description":"Schema for defining a visual and stylistic identity archetype used in concept art, AI generation, or character design. Supports detailed anatomical descriptions with enums for consistency – suitable for SFW and NSFW content. v0.1.0-beta",
    "type":"object",
-   "required": ["aesthetic_persona"],
+   "required":[
+      "aesthetic_persona"
+   ],
    "properties":{
       "aesthetic_persona":{
          "type":"object",
@@ -497,23 +499,6 @@
                               "protruding"
                            ]
                         },
-                        "color":{
-                           "type":"string",
-                           "enum":[
-                              "pink",
-                              "brown",
-                              "dark brown",
-                              "pale"
-                           ]
-                        },
-                        "diameter":{
-                           "type":"string",
-                           "enum":[
-                              "small",
-                              "medium",
-                              "large"
-                           ]
-                        },
                         "height":{
                            "type":"string",
                            "enum":[
@@ -570,25 +555,26 @@
                                     "bumpy",
                                     "textured"
                                  ]
+                              },
+                              "color":{
+                                 "type":"string",
+                                 "enum":[
+                                    "pink",
+                                    "brown",
+                                    "dark brown",
+                                    "pale",
+                                    "transparent"
+                                 ]
+                              },
+                              "diameter":{
+                                 "type":"string",
+                                 "enum":[
+                                    "small",
+                                    "medium",
+                                    "large"
+                                 ]
                               }
                            }
-                        },
-                        "underboob":{
-                           "type":"string",
-                           "enum":[
-                              "minimal",
-                              "defined",
-                              "sweaty"
-                           ]
-                        },
-                        "cleavage":{
-                           "type":"string",
-                           "enum":[
-                              "shallow",
-                              "deep",
-                              "natural",
-                              "pushed-up"
-                           ]
                         }
                      }
                   },
