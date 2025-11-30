@@ -40,6 +40,36 @@
             "core_aesthetic_traits":{
                "type":"object",
                "properties":{
+                  "age":{
+                     "type":"object",
+                     "description":"Character age for game logic and AI generation",
+                     "properties":{
+                        "value":{
+                           "type":"integer",
+                           "minimum":0,
+                           "maximum":9999,
+                           "description":"Exact age in years for game logic (supports fantasy ages)"
+                        },
+                        "category":{
+                           "type":"string",
+                           "enum":[
+                              "infant",
+                              "toddler",
+                              "child",
+                              "preteen",
+                              "teen",
+                              "young_adult",
+                              "adult",
+                              "mature_adult",
+                              "middle_aged",
+                              "senior",
+                              "elderly",
+                              "ancient"
+                           ],
+                           "description":"Age category for AI generation prompts"
+                        }
+                     }
+                  },
                   "body_type":{
                      "type":"string"
                   },
